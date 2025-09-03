@@ -9,51 +9,49 @@ body {
   font-family: sans-serif;
 }
 
-header, footer {
-  background-color: #333;
+header {
+  background: #333;
   color: white;
-  padding: 20px;
-  text-align: left;
-  font-weight: bold;
+  padding: 1rem 0 3.5rem 1rem;
+}
+.main-nav {
+  background: black;
 }
 
-footer {
-  text-align: center;
-  height: 150px;
-}
-
-nav {
-  background-color: black;
-}
-
-nav ul {
+.main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
+  justify-content: space-evenly;
+  padding: 0.8rem;
 }
 
-nav ul li a {
+.main-nav li {
   color: white;
-  text-decoration: none;
   font-weight: bold;
 }
 
-.content {
-  display: flex;
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  min-height: 60vh;
 }
 
 main {
-  flex: 3;
-  background-color: lightgray;
-  padding: 20px;
-  height: 200px;
+  background: #ccc;
+  padding: 1rem;
+  color:#333; 
 }
 
 aside {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  height: 200px;
+  background: #fff;
+  padding: 1rem;
+  color:#333;
 }
 
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  height:150px;
+  padding-top: 2.5rem;
+}
