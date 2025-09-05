@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+     font-family: "Exo 2", sans-serif;
+     
+}
+header span{
+    display:block;
+    background: #dddddd;
+    padding:1rem;
+    font-size: 1.5rem;
+	text-align: center;
+}
+nav{
+    background-color: #36454f;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-align:center;
+    padding:1rem;
+ }
+nav a:hover{
+    border: 1px solid #fff;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;                                     
+    justify-items: center;                
+    max-width: 80vw;
+    margin: 2rem auto;
+    min-height: 65vh;  
+}
+h1 {
+  grid-column: 1 / -1;                 
+  text-align: center;       
+  margin-bottom: 1.5rem;     
+}
+.card {
+  border: 3px solid #36454f;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 80%;      
+  overflow: hidden;                     
+}
+.card h2{
+    display:block;
+    background:#36454f;
+    color:white;
+    font-size: 1rem;
+    text-align: center;
+    margin: -1.5rem -1.5rem 0.5rem -1.5rem; 
+    padding: 0.5rem;
+}
+.card h3 {
+    margin-top:35px;
+    padding:0.5rem;
+    text-align: center;
+} 
+
+.card img {
+  float: right;
+  width: 150px;   
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  border-radius: 0.25rem;
+}
+.flag img{
+    margin-top:60px;
+    margin-right: 25px;
+    float:left;
+}
+.card p {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size:15px;
+}
+footer{
+    background: #dddddd;
+    padding:1.5rem;
+    font-size: 15px;
+	text-align: center; 
+}
+.card ul {
+  padding: 0.5rem 1rem;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+}
+#lastModified{
+    color:blue;
+}
+
+@media (min-width: 640px){
+    nav ul{
+        display:flex;
+        justify-content: space-evenly;
+    }
+}
