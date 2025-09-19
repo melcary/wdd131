@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dat and current climate of Cusco, Peru">
+    <meta name="author" content="Mel Cary">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Cusco</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Cusco</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cusco-hero2.webp" media="(min-width:1000px)">
+                <source srcset="images/cusco-medium-hero2.webp" media="(min-width:600px)" >
+                <img src="images/cusco-hero1.webp" alt="Cusco View" width="400" height="200">
+            </picture>
+        </div>
+
+        <div class="data">
+            <h2 class="data-heading">Data</h2>
+            <ul>
+                <li><strong>Area:</strong>  71,986 km²</li>
+                <li><strong>Population:</strong> 1,237,000</li>
+                <li><strong>Capital:</strong>  Cusco</li>
+                <li><strong>Languages:</strong>  Spanish, Quechua</li>
+                <li><strong>Currency:</strong>  Peruvian Sol</li>
+                <li><strong>Time Zone:</strong>  UTC−5</li>
+                <li><strong>Calling Mode:</strong>  +51</li>
+                <li><strong>Internet TLD:</strong>  .pe</li>
+            </ul>
+        </div>
+
+        <div class="weather">
+            <h2 class="weather-heading">Weather <span class="weather-icon"> ⛅</span> </h2>
+                <div class="weather-icon-mobile">
+                    <img src="images/weather.svg" alt="">
+                </div>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">8 °C</span></li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind-speed">8 km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p>©<span id="currentyear"></span>🔸Mel Cary🔸Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
