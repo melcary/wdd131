@@ -106,7 +106,9 @@ function displayTemples(list) {
     <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
     <img src="${temple.imageUrl}" 
          alt="${temple.templeName}" 
-         loading="lazy">
+         loading="lazy"
+         width="300"
+        height="300>
   `;
     container.appendChild(card);
   });
