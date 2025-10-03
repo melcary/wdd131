@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Confirmation</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      let count = localStorage.getItem("reviewCount");
+      if (!count) {
+        count = 0;
+      }
+      count++;
+      localStorage.setItem("reviewCount", count);
+
+      document.getElementById("counter").textContent = count;
+    });
+  </script>
+</head>
+<body>
+  <h1>Thank you for your review!</h1>
+  <p>Total reviews submitted: <span id="counter"></span></p>
+</body>
+</html>
